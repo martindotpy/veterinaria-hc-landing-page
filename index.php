@@ -8,10 +8,10 @@
 </head>
 <body>
     <header>
-        <div class="_logo">
-            <img src="" alt="">
+        <div class="logo">
+            <img src="assets\img\logo.jpg" alt="">
         </div>
-        <div>
+        <div class="headerButtons">
             <button class="headerButton">Nosotros</button>
             <button class="headerButton">Servicios</button>
             <button class="headerButton">Ubicación</button>

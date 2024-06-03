@@ -1,3 +1,44 @@
+:root {
+  --darkbg: #0f3b42;
+  --lightbg: #bae1df;
+  --gray: #65706f;
+}
 body {
-    margin: 0 auto;
+  margin: 0 auto;
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.logo img {
+  width: 100px;
+}
+.headerButtons {
+  display: flex;
+  gap: 1rem;
+}
+.headerButton {
+  background-color: #ffffff;
+  color: black;
+  padding: 1rem 3rem;
+  border: none;
+  font-size: 16px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+button {
+  background-color: var(--darkbg);
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  font-size: 16px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
 }
