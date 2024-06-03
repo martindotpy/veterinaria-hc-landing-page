@@ -12,9 +12,9 @@
             <img src="assets\img\logo.jpg" alt="">
         </div>
         <div class="headerButtons">
-            <button class="headerButton">Nosotros</button>
-            <button class="headerButton">Servicios</button>
-            <button class="headerButton">Ubicación</button>
+            <a class="headerButton" href="#">Nosotros</a>
+            <a class="headerButton" href="#">Servicios</a>
+            <a class="headerButton" href="#">Ubicación</a>
         </div>
         <div>
             <button>Contáctanos</button>
