@@ -7,19 +7,7 @@
     <title>Veterinaria HC - SPA & Pet Shop</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets\img\logo.jpg" alt="">
-        </div>
-        <div class="headerButtons">
-            <a class="headerButton" href="#">Nosotros</a>
-            <a class="headerButton" href="#">Servicios</a>
-            <a class="headerButton" href="#">Ubicación</a>
-        </div>
-        <div>
-            <a class="button">Contáctanos</a>
-        </div>
-    </header>
+<?php include 'components/header.php'; ?>
     <div class="container">
         <div class="about-container">
             <div class="text">
@@ -32,7 +20,7 @@
                 </p>
                 <a href="about-us.php" class="button">Contáctanos</a>
             </div>
-            <img src="assets\img\dogflower.png" alt="">
+            <img src="assets\img\dogflower.webp" alt="" loading="lazy">
         </div>
         <hr>
         <div class="services">
@@ -61,7 +49,7 @@
                 </div>
             </div>
             <div class="img">
-                <img src="assets\img\cathome.png" alt="">
+                <img src="assets\img\cathome.webp" alt="" loading="lazy">
             </div>
             
         </div>
@@ -81,23 +69,21 @@
                 <p>9:00 am - 6:00 pm</p>
                 </div>
             </div>
-            <img src="assets\img\doghome.png" alt="">
-            <div class="map"></div>
+                
+                <img src="assets\img\doghome.webp" alt="" loading="lazy">
+                <div class="map">
+                <h1>
+                    Ubícanos en
+                </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1981.5517612762133!2d-79.78365213207255!3d-6.634063754139722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzgnMDEuNyJTIDc5wrA0NycwMC4yIlc!5e0!3m2!1ses-419!2spe!4v1717781580836!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+                </div>
+            
         </div>
 
     </div>
 
-    <footer>
-         <div class="logo">
-            <img src="assets\img\logo_dark.png" alt="">
-        </div>
-        <div class="headerButtons">
-            <a class="button" href="#">Nosotros</a>
-            <a class="button" href="#">Servicios</a>
-            <a class="button" href="#">Ubicación</a>
-        </div>
-        <div>
-    </footer>
+    <?php include 'components\footer.php'; ?>
     <script src="/assets/js/app.js"></script>
 </body>
 </html>

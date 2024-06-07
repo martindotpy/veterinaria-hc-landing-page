@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 :root {
   --darkbg: #0f3b42;
   --lightbg: #bae1df;
   --gray: #65706f;
 }
+
 body {
   margin: 0 auto;
   height: 100vh;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -17,48 +20,68 @@ header {
   position: relative;
   font-family: "Inter", sans-serif;
 }
+
 .logo img {
   width: 100px;
 }
+
 .headerButtons {
   display: flex;
   gap: 1rem;
 }
+
 .headerButton {
   background-color: #ffffff;
   color: black;
   padding: 1rem 3rem;
   border: none;
   font-size: 16px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   cursor: pointer;
   text-decoration: none;
 }
+
 .headerButton:hover {
   background-color: var(--darkbg);
   color: white;
 }
+
+.container {
+  padding-top: 5rem;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  justify-items: stretch;
+}
+
 .button {
   background-color: var(--darkbg);
   color: white;
   padding: 1rem 3rem;
   border: none;
   font-size: 16px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   cursor: pointer;
   font-family: "Inter", sans-serif;
   text-decoration: none;
 }
+
 .button:hover {
   background-color: white;
   color: var(--darkbg);
-  border: var(--darkbg) solid 2px;
+  outline-style: solid;
+  outline-color: var(--darkbg);
+  outline-width: 2px;
 }
-.container {
-  margin: 5rem 5rem;
-}
+
 .about-container {
   display: flex;
   flex-direction: row;
@@ -66,35 +89,72 @@ header {
   margin-bottom: 5rem;
   justify-content: space-around;
 }
+.aboutus-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5rem;
+  justify-content: space-around;
+}
+.aboutus-container img {
+  width: 20%;
+}
+.mission {
+  background-color: var(--lightbg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 5rem;
+}
+.mission > img {
+  padding: 4rem;
+  width: 50%;
+}
 .text {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   gap: 1rem;
 }
-.text h1 {
+.text-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  text-align: right;
+}
+
+.text h1,
+.text-right h1 {
   font-size: 36px;
   font-family: "Raleway", sans-serif;
 }
-.text p {
+
+.text p,
+.text-right p {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
 }
+
 .about-container img {
-  width: 40%;
+  width: 30%;
   transform: rotate(-90deg);
 }
+
 .services {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .services > h1 {
   font-size: 36px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
+
 .services > p {
   font-size: 24px;
   font-family: "Inter", sans-serif;
@@ -107,6 +167,7 @@ header {
   justify-content: space-around;
   gap: 6rem;
 }
+
 .card {
   background-color: var(--gray);
   display: flex;
@@ -114,15 +175,18 @@ header {
   align-items: center;
   justify-content: center;
   color: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 10px;
 }
+
 .card h3 {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   text-align: center;
+  padding: 0.25rem 0;
 }
+
 .card p {
   margin: 0;
   font-size: 16px;
@@ -130,35 +194,111 @@ header {
   font-weight: 300;
   text-align: center;
 }
+
 .img {
   justify-content: flex-start;
 }
+
 .img img {
   width: 30%;
 }
+
 .location {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   margin: 5rem 0;
 }
+
 .location img {
   width: 10%;
+  object-fit: contain;
 }
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
 .info {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .info h2 {
   font-size: 24px;
   font-family: "Ubuntu", sans-serif;
 }
+
 .info p {
   font-size: 18px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
+}
+
+.map h1 {
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+}
+.email {
+  position: relative;
+  width: 50vw;
+}
+.email h1 {
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+form.email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+form.email div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+form.email div * {
+  font-family: "Inter", sans-serif;
+}
+.email-cont {
+  margin: 2rem;
+  align-items: center;
+}
+
+form.email input {
+  width: 35vw;
+  padding: 0.5rem;
+  border: gray 1px solid;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+footer .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#mensaje {
+  width: 35vw;
+  height: 50vh;
+}
+
+footer .social-media a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
 footer {
@@ -170,4 +310,24 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
   font-family: "Inter", sans-serif;
+}
+.container-row-container {
+  display: flex;
+  flex-direction: row;
+}
+.ubication-contact {
+  width: 50vw;
+  background-color: var(--lightbg);
+  gap: 3rem;
+  padding: 4rem;
+}
+.info-container {
+  display: flex;
+  padding: 4rem;
+  justify-content: space-around;
+}
+.info-container img {
+  width: 60%;
+  transform: rotate(-90deg);
+  object-fit: contain;
 }
