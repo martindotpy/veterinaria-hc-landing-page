@@ -8,7 +8,7 @@
     <img src="assets/img/logo_dark.webp" alt="" loading="lazy" />
   </div>
   <div class="headerButtons">
-    <a class="button" href="./#us">Nosotros</a>
+    <a class="button" href="../about-us.php">Nosotros</a>
     <a class="button" href="./#services">Servicios</a>
     <a class="button" href="./#location">Ubicación</a>
   </div>
